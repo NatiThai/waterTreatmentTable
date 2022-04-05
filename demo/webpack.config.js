@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         bundle: __dirname + `/src/views/${target}.js`,
     },
-    mode: 'development',
+    mode: 'development',//or production
     devtool: 'source-map',
     output: {
         path: __dirname + '/dist/build',

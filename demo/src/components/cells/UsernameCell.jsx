@@ -9,7 +9,7 @@ const styles = {
         height: "100%",
         alignItems: "center",
     },
-    img: { minWidth: 32 },
+    img: { minWidth: 40 },
     input: {
         position: "absolute",
         height: 28,
@@ -43,7 +43,7 @@ const UsernameCell = ({
         <div style={styles.root}>
             {isEdit ? (
                 <React.Fragment>
-                    <img style={styles.img} src={data.avatar} alt="avatar" />
+                    {/* <img style={styles.img} src={data.avatar} alt="avatar" /> */}
                     <input
                         autoFocus={isFirstEditableCell}
                         style={styles.input}
@@ -59,7 +59,7 @@ const UsernameCell = ({
                 </React.Fragment>
             ) : (
                 <React.Fragment>
-                    <img style={styles.img} src={data.avatar} alt="avatar" />
+                    {/* <img style={styles.img} src={data.avatar} alt="avatar" /> */}
                     <span style={styles.text} title={value}>
                         {value}
                     </span>

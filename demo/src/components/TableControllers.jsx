@@ -6,10 +6,11 @@ const TableControllers = ({ controllers }) => {
         <React.Fragment>
             <ControllerWrappper label="Page">
                 <input
+                    disabled
                     type="number"
                     value={controllers.page[0]}
                     min="1"
-                    onChange={(e) => controllers.page[1](~~e.target.value)}
+                    onChange={(e) => controllers.page[1](e.target.value)}
                 />
             </ControllerWrappper>
             <ControllerWrappper label="Page Size">
@@ -17,7 +18,7 @@ const TableControllers = ({ controllers }) => {
                     type="number"
                     value={controllers.pageSize[0]}
                     min="1"
-                    onChange={(e) => controllers.pageSize[1](~~e.target.value)}
+                    onChange={(e) => controllers.pageSize[1](e.target.value)}
                 />
             </ControllerWrappper>
             <ControllerWrappper label="Search Text">
@@ -133,7 +134,7 @@ const TableControllers = ({ controllers }) => {
                     }
                 />
             </ControllerWrappper>
-            <ControllerWrappper label="Is Virtual Scroll">
+            {/* <ControllerWrappper label="Is Virtual Scroll">
                 <input
                     type="checkbox"
                     checked={controllers.isVirtualScroll[0]}
@@ -143,7 +144,7 @@ const TableControllers = ({ controllers }) => {
                         )
                     }
                 />
-            </ControllerWrappper>
+            </ControllerWrappper> */}
             <ControllerWrappper label="Is Paginated">
                 <input
                     type="checkbox"

@@ -9,5 +9,5 @@ export default {
     prev: "Prev",
     next: "Next",
     columnVisibility: "Column visibility",
-    noResults: "No Results found",
+    noResults: "Sorry No Results found",
 };

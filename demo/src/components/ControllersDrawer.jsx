@@ -159,7 +159,7 @@ const ControllersDrawer = ({ isOpen, onToggle, controllers }) => {
                         padding: "0 20px",
                     }}
                 >
-                    <a
+                    {/* <a
                         href="https://github.com/NadavShaar/react-grid-table"
                         style={styles.link}
                         title="Github"
@@ -172,7 +172,7 @@ const ControllersDrawer = ({ isOpen, onToggle, controllers }) => {
                         title="NPM"
                     >
                         {NPM_ICON}
-                    </a>
+                    </a> */}
                 </div>
             </div>
             <div style={styles.tabs}>

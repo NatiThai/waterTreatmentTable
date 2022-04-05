@@ -65,6 +65,7 @@ const ColumnsControllers = ({ controllers }) => {
                     {column.id !== "checkbox" && column.id !== "buttons" ? (
                         <ControllerWrappper label="Label">
                             <input
+                                disabled
                                 type="text"
                                 value={column.label}
                                 onChange={(e) =>

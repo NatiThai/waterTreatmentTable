@@ -18,7 +18,7 @@ const MyAwesomeTable = () => {
     let [sort, setSort] = useState({ colId: null, isAsc: true });
     let [page, setPage] = useState(1);
     let [pageSize, setPageSize] = useState(20);
-    let [pageSizes, setPageSizes] = useState([20, 50, 100]);
+    let [pageSizes, setPageSizes] = useState([10, 20, 50]);
     let [enableColumnsReorder, setEnableColumnsReorder] = useState(true);
     let [highlightSearch, setHighlightSearch] = useState(true);
     let [showSearch, setShowSearch] = useState(true);
@@ -29,7 +29,7 @@ const MyAwesomeTable = () => {
     let [isVirtualScroll, setIsVirtualScroll] = useState(true);
     let [isPaginated, setIsPaginated] = useState(true);
     let [minSearchChars, setMinSearchChars] = useState(2);
-    let [minColumnResizeWidth, setMinColumnWidth] = useState(70);
+    let [minColumnResizeWidth, setMinColumnWidth] = useState(120);
     let [columns, setColumns] = useState(
         getColumns({
             setRowsData: (newRows) => {
