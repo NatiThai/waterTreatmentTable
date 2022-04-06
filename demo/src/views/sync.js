@@ -6,6 +6,7 @@ import getColumns from "../getColumns";
 import MOCK_DATA from "../MOCK_DATA.json";
 import "../index.css";
 
+
 const MyAwesomeTable = () => {
     const [, setTableManager] = useState(null);
     const [rowsData, setRowsData] = useState([]);

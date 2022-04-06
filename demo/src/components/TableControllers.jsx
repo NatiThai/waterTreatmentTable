@@ -123,7 +123,7 @@ const TableControllers = ({ controllers }) => {
                     }
                 />
             </ControllerWrappper>
-            <ControllerWrappper label="Is Header Sticky">
+            <ControllerWrappper label="Header Sticky">
                 <input
                     type="checkbox"
                     checked={controllers.isHeaderSticky[0]}
@@ -145,7 +145,7 @@ const TableControllers = ({ controllers }) => {
                     }
                 />
             </ControllerWrappper> */}
-            <ControllerWrappper label="Is Paginated">
+            <ControllerWrappper label="Paginated">
                 <input
                     type="checkbox"
                     checked={controllers.isPaginated[0]}
@@ -164,7 +164,7 @@ const TableControllers = ({ controllers }) => {
                     }
                 />
             </ControllerWrappper>
-            <ControllerWrappper label="Min Column Width">
+            {/* <ControllerWrappper label="Min Column Width">
                 <input
                     type="number"
                     value={controllers.minColumnResizeWidth[0]}
@@ -173,8 +173,8 @@ const TableControllers = ({ controllers }) => {
                         controllers.minColumnResizeWidth[1](~~e.target.value)
                     }
                 />
-            </ControllerWrappper>
-            <ControllerWrappper label="Select All Mode">
+            </ControllerWrappper> */}
+            {/* <ControllerWrappper label="Select All Mode">
                 <select
                     value={controllers.selectAllMode[0]}
                     onChange={(e) =>
@@ -184,7 +184,7 @@ const TableControllers = ({ controllers }) => {
                     <option value={"page"}>Page</option>
                     <option value={"all"}>All</option>
                 </select>
-            </ControllerWrappper>
+            </ControllerWrappper> */}
         </React.Fragment>
     );
 };
