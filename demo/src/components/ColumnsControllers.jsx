@@ -108,7 +108,7 @@ const ColumnsControllers = ({ controllers }) => {
                             />
                         </ControllerWrappper>
                     ) : null}
-                    {column.id !== "checkbox" && column.id !== "buttons" ? (
+                    {/* {column.id !== "checkbox" && column.id !== "buttons" ? (
                         <ControllerWrappper label="Editable">
                             <input
                                 type="checkbox"
@@ -116,7 +116,7 @@ const ColumnsControllers = ({ controllers }) => {
                                 onChange={() => setEditable(column)}
                             />
                         </ControllerWrappper>
-                    ) : null}
+                    ) : null} */}
                     <ControllerWrappper label="Resizable">
                         <input
                             type="checkbox"

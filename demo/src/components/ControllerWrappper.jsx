@@ -11,6 +11,7 @@ const styles = {
         whiteSpace: "nowrap",
         overflow: "hidden",
         textOverflow: "ellipsis",
+        fontSize: 16
     },
     children: {
         display: "flex",

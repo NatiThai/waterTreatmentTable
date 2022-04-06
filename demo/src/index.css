@@ -92,7 +92,7 @@ body {
 
 @media (min-width: 1025px) {
   .tableWrapper {
-    padding: 30px;
+    padding: 20px;
   }
   .settingsDrawer {
     position: unset !important;
