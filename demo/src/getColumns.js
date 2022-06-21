@@ -8,22 +8,20 @@ import {
 } from "./components/cells";
 
 const getColumns = ({ setRowsData }) => {
-    const ButtonsEditorCell = (props) => ( <
-        BaseButtonsEditorCell {...props }
-        setRowsData = { setRowsData }
-        />
+    const ButtonsEditorCell = (props) => (
+        <BaseButtonsEditorCell {...props} setRowsData={setRowsData} />
     );
 
     return [
-        //    {
-        //         id: "checkbox",
-        //         visible: true,
-        //         pinned: true,
-        //         width: "54px",
-        //     },
+        {
+            id: "checkbox",
+            visible: true,
+            pinned: true,
+            width: "54px",
+        },
         {
             id: "2",
-            field: "หน่วยงานที่รับผิดชอบ",
+            field: "username",
             label: "หน่วยงานที่รับผิดชอบ",
             visible: true,
             searchable: true,
@@ -35,7 +33,7 @@ const getColumns = ({ setRowsData }) => {
         },
         {
             id: "3",
-            field: "ชื่อโครงการ",
+            field: "first_name",
             label: "ชื่อโครงการ",
             visible: true,
             searchable: true,
@@ -44,8 +42,8 @@ const getColumns = ({ setRowsData }) => {
             resizable: true,
         },
         {
-            id: "3",
-            field: "พิกัดที่ตั้ง",
+            id: "4",
+            field: "last_name",
             label: "พิกัดที่ตั้ง",
             visible: true,
             searchable: true,
@@ -54,8 +52,8 @@ const getColumns = ({ setRowsData }) => {
             resizable: true,
         },
         {
-            id: "4",
-            field: "ที่อยู่",
+            id: "5",
+            field: "Address",
             label: "ที่อยู่",
             visible: true,
             searchable: true,
@@ -64,8 +62,8 @@ const getColumns = ({ setRowsData }) => {
             resizable: true,
         },
         {
-            id: "5",
-            field: "ลักษณะอาคาร",
+            id: "6",
+            field: "Build",
             label: "ลักษณะอาคาร",
             visible: true,
             searchable: true,
@@ -73,32 +71,10 @@ const getColumns = ({ setRowsData }) => {
             sortable: true,
             resizable: true,
         },
-        // {
-        //     id: "6",
-        //     field: "gender",
-        //     label: "Gender",
-        //     visible: true,
-        //     searchable: true,
-        //     editable: true,
-        //     sortable: true,
-        //     resizable: true,
-        //     editorCellRenderer: GenderEditorCell,
-        // },
-        {
-            id: "6",
-            field: "ขนาดบาน",
-            label: "ขนาดบาน",
-            visible: true,
-            searchable: true,
-            editable: true,
-            sortable: true,
-            resizable: true,
-
-        },
         {
             id: "7",
-            field: "จำนวนบาน",
-            label: "จำนวนบาน",
+            field: "Done_years",
+            label: "ก่อสร้างแล้วเสร็จปี พศ",
             visible: true,
             searchable: true,
             editable: true,
@@ -107,18 +83,19 @@ const getColumns = ({ setRowsData }) => {
         },
         {
             id: "8",
-            field: "ขนาดเครื่องสูบ",
-            label: "ขนาดเครื่องสูบ",
+            field: "SizeA",
+            label: "ขนาดบาน",
             visible: true,
             searchable: true,
             editable: true,
             sortable: true,
             resizable: true,
+            
         },
         {
             id: "9",
-            field: "จำนวนเครื่องสูบ",
-            label: "จำนวนเครื่องสูบ",
+            field: "ValuesA",
+            label: "จำนวนบาน",
             visible: true,
             searchable: true,
             editable: true,
@@ -127,31 +104,18 @@ const getColumns = ({ setRowsData }) => {
         },
         {
             id: "10",
-            field: "ว/ด/ป ที่ตวจสอบล่าสุดโดยโครงการ",
-            label: "ว/ด/ป ที่ตวจสอบล่าสุดโดยโครงการ",
+            field: "SizeB",
+            label: "ขนาดเครื่องสูบ",
             visible: true,
             searchable: true,
             editable: true,
             sortable: true,
             resizable: true,
-            sort: ({ a, b, isAscending }) => {
-                let aa = a.split("/").reverse().join(),
-                    bb = b.split("/").reverse().join();
-                return aa < bb ?
-                    isAscending ?
-                    -1 :
-                    1 :
-                    aa > bb ?
-                    isAscending ?
-                    1 :
-                    -1 :
-                    0;
-            },
         },
         {
             id: "11",
-            field: "วิธีการตรวจสอบโดยโครงการ",
-            label: "วิธีการตรวจสอบโดยโครงการ",
+            field: "ValuesB",
+            label: "จำนวนเครื่องสูบ",
             visible: true,
             searchable: true,
             editable: true,
@@ -160,18 +124,8 @@ const getColumns = ({ setRowsData }) => {
         },
         {
             id: "12",
-            field: "ผลการตรวจสอบโดยโครงการ",
-            label: "ผลการตรวจสอบโดยโครงการ",
-            visible: true,
-            searchable: true,
-            editable: true,
-            sortable: true,
-            resizable: true,
-        },
-        {
-            id: "13",
-            field: "ว/ด/ป ที่ตวจสอบล่าสุดโดยสำนัก",
-            label: "ว/ด/ป ที่ตวจสอบล่าสุดโดยสำนัก",
+            field: "DayCheck",
+            label: "ว/ด/ป ที่ตรวจสอบล่าสุดโดยโครงการ",
             visible: true,
             searchable: true,
             editable: true,
@@ -180,22 +134,31 @@ const getColumns = ({ setRowsData }) => {
             sort: ({ a, b, isAscending }) => {
                 let aa = a.split("/").reverse().join(),
                     bb = b.split("/").reverse().join();
-                return aa < bb ?
-                    isAscending ?
-                    -1 :
-                    1 :
-                    aa > bb ?
-                    isAscending ?
-                    1 :
-                    -1 :
-                    0;
+                return aa < bb
+                    ? isAscending
+                        ? -1
+                        : 1
+                    : aa > bb
+                    ? isAscending
+                        ? 1
+                        : -1
+                    : 0;
             },
-            
+        },
+        {
+            id: "13",
+            field: "Howcheck",
+            label: "วิธีการตรวจสอบโดยโครงการ",
+            visible: true,
+            searchable: true,
+            editable: true,
+            sortable: true,
+            resizable: true,
         },
         {
             id: "14",
-            field: "วิธีการตรวจสอบโดยสำนัก",
-            label: "วิธีการตรวจสอบโดยสำนัก",
+            field: "Resultcheck",
+            label: "ผลการตรวจสอบโดยโครงการ",
             visible: true,
             searchable: true,
             editable: true,
@@ -204,7 +167,40 @@ const getColumns = ({ setRowsData }) => {
         },
         {
             id: "15",
-            field: "ผลการตรวจสอบโดยสำนัก",
+            field: "last_visited",
+            label: "ว/ด/ป ที่ตรวจสอบล่าสุดโดยสำนัก",
+            visible: true,
+            searchable: true,
+            editable: true,
+            sortable: true,
+            resizable: true,
+            sort: ({ a, b, isAscending }) => {
+                let aa = a.split("/").reverse().join(),
+                    bb = b.split("/").reverse().join();
+                return aa < bb
+                    ? isAscending
+                        ? -1
+                        : 1
+                    : aa > bb
+                    ? isAscending
+                        ? 1
+                        : -1
+                    : 0;
+            },
+        },
+        {
+            id: "16",
+            field: "EyeCheck",
+            label: "วิธีการตรวจสอบโดยสำนัก",
+            visible: true,
+            searchable: true,
+            editable: true,
+            sortable: true,
+            resizable: true,
+        },
+        {
+            id: "17",
+            field: "Enclosed",
             label: "ผลการตรวจสอบโดยสำนัก",
             visible: true,
             searchable: true,

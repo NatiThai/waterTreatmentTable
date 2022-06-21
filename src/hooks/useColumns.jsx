@@ -47,7 +47,7 @@ const useColumns = (props, tableManager) => {
             return {
                 label: column.field,
                 className: "",
-                width: "200px",
+                width: "250px",
                 minResizeWidth: null,
                 maxResizeWidth: null,
                 getValue: ({ value }) => value,

@@ -43,5 +43,13 @@ module.exports = {
         extensions: [".js", ".jsx"]
     },
     externals: {
-    }
+    },
+    performance: {
+        maxAssetSize: 1000000,
+        maxEntrypointSize: 400000,
+        assetFilter: function (assetFilename) {
+          return assetFilename.endsWith('.json');
+        },
+      },
+    
 }

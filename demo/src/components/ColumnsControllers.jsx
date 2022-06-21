@@ -45,10 +45,10 @@ const ColumnsControllers = ({ controllers }) => {
         setColumns(columns);
     };
 
-    const setEditable = (column) => {
-        column.editable = !column.editable;
-        setColumns(columns);
-    };
+    // const setEditable = (column) => {
+    //     column.editable = !column.editable;
+    //     setColumns(columns);
+    // };
 
     const setResizable = (column) => {
         column.resizable = !column.resizable;
@@ -58,7 +58,7 @@ const ColumnsControllers = ({ controllers }) => {
     return (
         <React.Fragment>
             {columns.map((column, idx) => (
-                <div key={column.id} style={styles.colmn}>
+                <div key={column.id} style={styles.column}>
                     <span style={styles.label}>
                         {column.label || column.id}
                     </span>
