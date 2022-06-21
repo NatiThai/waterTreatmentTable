@@ -14,8 +14,8 @@ const MyAwesomeTable = () => {
     let [selectedRowsIds, setSelectedRowsIds] = useState([]);
     let [sort, setSort] = useState({ colId: null, isAsc: true });
     let [page, setPage] = useState(1);
-    let [pageSize, setPageSize] = useState(20);
-    let [pageSizes, setPageSizes] = useState([20,50]);
+    let [pageSize, setPageSize] = useState(10);
+    let [pageSizes, setPageSizes] = useState([10,20,50]);
     let [enableColumnsReorder, setEnableColumnsReorder] = useState(true);
     let [highlightSearch, setHighlightSearch] = useState(true);
     let [showSearch, setShowSearch] = useState(true);
