@@ -52,6 +52,7 @@
         "dist"
     ],
     "dependencies": {
+        "netlify-cli": "^10.5.1",
         "react-virtual": "^2.3.0"
     }
 }

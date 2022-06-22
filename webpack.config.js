@@ -7,7 +7,7 @@ module.exports = {
     output: {
         library: 'GridTable',
         libraryTarget: 'umd',
-        path: __dirname + '/dist',
+        path: __dirname + '/dist/build',
         filename: '[name].js'
     },
     module: {
