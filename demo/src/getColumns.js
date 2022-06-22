@@ -13,12 +13,12 @@ const getColumns = ({ setRowsData }) => {
     );
 
     return [
-        {
-            id: "checkbox",
-            visible: true,
-            pinned: true,
-            width: "54px",
-        },
+        // {
+        //     id: "checkbox",
+        //     visible: true,
+        //     pinned: true,
+        //     width: "54px",
+        // },
         {
             id: "2",
             field: "username",
@@ -28,6 +28,7 @@ const getColumns = ({ setRowsData }) => {
             editable: true,
             sortable: true,
             resizable: true,
+            pinned: true,
             cellRenderer: UsernameCell,
             editorCellRenderer: UsernameEditorCell,
         },
